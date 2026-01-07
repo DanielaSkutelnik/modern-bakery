@@ -235,7 +235,6 @@ ul {
 .chef-photo {
   width: 240.99989318847656;
   height: 390;
-  angle: 0 deg;
   opacity: 1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -283,6 +282,25 @@ ul {
   font-size: 14px;
 }
 
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* Contacts section */
 .contact-title {
   margin-bottom: 16px;
@@ -298,6 +316,14 @@ ul {
 
 .adress-link:hover {
   color: var(--color-brand-normal);
+}
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+
+.adress-icon:hover {
+  fill: var(--color-brand-normal);
 }
 
 .adress-copyright {
