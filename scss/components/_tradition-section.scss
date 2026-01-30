@@ -1,0 +1,30 @@
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-text span {
+  text-transform: uppercase;
+  color: var(--color-brand-normal);
+  font-weight: 600;
+}
+
+.five-minutes {
+  max-width: 340px;
+}
+.five-minutes span {
+  color: var(--color-brand-normal);
+  font-weight: 600;
+}

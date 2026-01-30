@@ -4,28 +4,24 @@
   font-weight: 300;
   src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 400;
   src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 600;
   src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 900;
   src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
 }
-
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -41,6 +37,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
@@ -93,6 +90,7 @@ ul {
   max-width: 1240px;
   margin: 0 auto;
 }
+
 /* Button */
 .button {
   padding: 16px 32px;
@@ -121,7 +119,6 @@ ul {
 }
 
 /*Header*/
-
 header {
   position: absolute;
   top: 0;
@@ -183,11 +180,13 @@ header {
   padding: 16px 0;
   background-color: var(--color-brand-normal);
 }
+
 .adventages-list {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
+
 .advantages-item {
   color: var(--color-primary-light);
   font-size: 20px;
@@ -213,6 +212,7 @@ header {
 .traditions-section {
   padding-top: 96px;
 }
+
 .traditions-container {
   display: flex;
   justify-content: space-between;
@@ -236,6 +236,7 @@ header {
 .five-minutes {
   max-width: 340px;
 }
+
 .five-minutes span {
   color: var(--color-brand-normal);
   font-weight: 600;
@@ -311,7 +312,12 @@ header {
   display: flex;
   gap: 20px;
 }
+
 .format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 444px;
   width: 349px;
   padding: 24px;
@@ -321,9 +327,18 @@ header {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-  border: 1px solid lightgreen; /* remove */
   border-radius: 16px;
 }
+
+.format-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -331,11 +346,13 @@ header {
 .format-title {
   font-weight: 600;
   font-size: 24px;
+  color: var(--color-primary-light);
 }
 
 .format-text {
   font-weight: 300;
   font-size: 14px;
+  color: var(--color-primary-light);
 }
 
 .carousel-button {
@@ -477,6 +494,7 @@ header {
     opacity 0.3s,
     visibility 0.3s;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -525,10 +543,20 @@ header {
   outline: none;
 }
 
+.form-input::-moz-placeholder {
+  color: var(--color-brand-brown);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
 .form-input::placeholder {
   color: var(--color-brand-brown);
   font-size: 16px;
   line-height: 1.17;
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
 }
 
 .form-input:focus::placeholder {
@@ -552,4 +580,4 @@ header {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
-}
+} /*# sourceMappingURL=main.css.map */
